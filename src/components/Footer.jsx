@@ -11,14 +11,14 @@ export default function Footer() {
             <div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 8 }}>Registered Office / Works</div>
               <div style={{ fontSize: '1.1rem', lineHeight: '1.5' }}>
-                Plot No. 2845, St. No. 1,<br />
+                Plot No. 2682, St. No. 1,<br />
                 Near JBR Electronics, Baba Gajjajan Colony,<br />
                 Old Moti Nagar, Ludhiana, Punjab, 141003
               </div>
             </div>
             <div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 8 }}>Electronic Mail</div>
-              <div style={{ fontSize: '1.25rem' }}>aonepattern@gmail.com</div>
+              <div style={{ fontSize: '1.25rem' }}>aonepattern@rediffmail.com</div>
             </div>
           </div>
         </div>

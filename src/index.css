@@ -144,13 +144,44 @@ button { font: inherit; }
 .hero-caption { max-width: 300px; padding-bottom: 16px; }
 .hero-machine-strip { flex: 1; display: flex; align-items: center; justify-content: center; gap: 32px; position: relative; z-index: 2; min-height: 0; }
 .hero-machine {
-  object-fit: cover;
   border: 1px solid var(--border-color);
   background: var(--bg-white);
-  transition: opacity 0.45s ease, filter 0.45s ease, transform 0.45s ease;
+  overflow: hidden;
+  will-change: transform, opacity;
 }
-.hero-machine.side { width: 29%; height: min(30vh, 280px); filter: grayscale(1); opacity: 0.62; transform: scale(0.96); }
-.hero-machine.main { width: 42%; height: min(38vh, 360px); opacity: 1; transform: scale(1.05); box-shadow: 0 18px 44px rgba(17,17,17,0.12); }
+.hero-machine.side { width: 29%; height: min(30vh, 280px); }
+.hero-machine.main { width: 42%; height: min(38vh, 360px); box-shadow: 0 18px 44px rgba(17,17,17,0.12); }
+
+.hero-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+  position: relative;
+  z-index: 3;
+}
+.hero-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.hero-dot-btn {
+  width: 24px;
+  height: 4px;
+  background: rgba(17, 17, 17, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  padding: 0;
+}
+.hero-dot-btn.active {
+  background: var(--accent-red);
+  width: 44px;
+}
+.hero-dot-btn:hover:not(.active) {
+  background: rgba(17, 17, 17, 0.4);
+}
 
 .split-layout { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; position: relative; }
 .split-left {
