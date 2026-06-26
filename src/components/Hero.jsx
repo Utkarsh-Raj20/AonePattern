@@ -23,7 +23,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setActive((current) => getWrappedIndex(current + 1))
-    }, 4500)
+    }, 2000)
 
     return () => window.clearInterval(timer)
   }, [])
