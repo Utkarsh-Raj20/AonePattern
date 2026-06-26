@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { useScroll } from 'framer-motion'
 import { useRef } from 'react'
 import RotatingToolModel from './RotatingToolModel'
 
@@ -6,18 +6,14 @@ export default function ScrollModel() {
   const containerRef = useRef(null)
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ['start start', 'end end'] })
 
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.95, 1.05, 0.95])
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 5])
-  const y = useTransform(scrollYProgress, [0, 1], [0, -30])
-
   return (
-    <section className="split-layout" ref={containerRef}>
+    <section className="split-layout" ref={containerRef} id="main-content">
       <div className="split-left">
         <div className="bg-crosshair light"></div>
         <div className="bg-circle-dashed light"></div>
-        <motion.div className="model-container" style={{ scale, rotate, y }}>
+        <div className="model-container">
           <RotatingToolModel progress={scrollYProgress} />
-        </motion.div>
+        </div>
       </div>
 
       <div className="split-right">
@@ -73,11 +69,11 @@ export default function ScrollModel() {
           <div className="panel-stack">
             <div className="bracket-text">[ Service & Quality ]</div>
             <h2 className="huge-title" style={{ color: 'var(--accent-red)' }}>
-              <span>25+ years of</span>
+              <span>35+ years of</span>
               <span>field experience.</span>
             </h2>
             <p className="panel-desc">
-              The company is managed by a dynamic and highly qualified team with more than 25 years of core experience in the field. From a simple tolerance review to the final design, we are always ready at the service of our valuable customers.
+              The company is managed by a dynamic and highly qualified team with more than 35 years of core experience in the field. From a simple tolerance review to the final design, we are always ready at the service of our valuable customers.
             </p>
             <p className="panel-desc">
               At Aone Pattern, quality and customer satisfaction drive everything we do. Flexibility is key: we consider all inquiries as future business proposals. All components are thoroughly inspected right from the raw materials to final finishing.

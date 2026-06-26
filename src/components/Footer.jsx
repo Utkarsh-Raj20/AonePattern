@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer-brutal" id="contact">
+    <footer className="footer-brutal" id="footer">
       <div className="container">
         <div className="footer-grid">
           <div>

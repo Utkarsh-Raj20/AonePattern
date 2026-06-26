@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion'
-import { Car, Droplets, Tractor, CircleDot, Factory, Cog, Shirt, Weight } from 'lucide-react'
+import { Car, Factory, Cog, Flame, Gauge, Tractor, Dumbbell } from 'lucide-react'
 
 const industries = [
   { icon: Car, label: 'GS AUTO' },
   { icon: Factory, label: 'Mehru Casting' },
   { icon: Cog, label: 'GSAI' },
-  { icon: Droplets, label: 'Hi Tech Casting' },
-  { icon: CircleDot, label: 'STAR FLEX' },
+  { icon: Flame, label: 'Hi Tech Casting' },
+  { icon: Gauge, label: 'STAR FLEX' },
   { icon: Tractor, label: 'PREET TRACTORS' },
-  { icon: Weight, label: 'FITEX' },
+  { icon: Tractor, label: 'SONALIKA' },
+  { icon: Dumbbell, label: 'FITEX' },
 ]
 
 export default function Industries() {

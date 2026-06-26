@@ -19,7 +19,7 @@ export default function Quality() {
             <div className="bracket-text">[ Service + Quality ]</div>
             <h2>Inspection built into the rhythm of the job.</h2>
           </div>
-          <p className="section-kicker">The old profile emphasized customer satisfaction and final checks. This section says the same thing in a more modern, technical voice.</p>
+          <p className="section-kicker">Quality is not a separate step — it is built into every stage of the process, from material selection to final trial fitment.</p>
         </div>
         <div className="quality-grid brutal-grid">
           {items.map((item, i) => (

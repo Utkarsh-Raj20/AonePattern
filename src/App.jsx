@@ -6,6 +6,7 @@ import Process from './components/Process'
 import Products from './components/Products'
 import Industries from './components/Industries'
 import Quality from './components/Quality'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <Products />
       <Industries />
       <Quality />
+      <Contact />
       <Footer />
     </>
   )

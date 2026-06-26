@@ -7,10 +7,6 @@ const data = {
     { name: 'Die and mould finishing', specs: [['Use', 'Final contouring and surface cleanup'], ['Control', 'CAD/CAM toolpaths'], ['Output', 'Clean geometry ready for assembly']] },
     { name: 'Fixture machining', specs: [['Use', 'Locating plates, nests, checking aids'], ['Focus', 'Flatness, drilling, pockets'], ['Output', 'Shop-ready tooling support']] },
   ],
-  'CNC Turning': [
-    { name: 'Turned inserts and pins', specs: [['Use', 'Guide pins, bushes, sleeves'], ['Material', 'EN series steel, MS, aluminium'], ['Output', 'Consistent cylindrical accuracy']] },
-    { name: 'Round tooling details', specs: [['Use', 'Bosses, collars, shafts'], ['Focus', 'Diameter control and finish'], ['Output', 'Ready for assembly or heat treatment']] },
-  ],
   'Tool Room Support': [
     { name: 'Bench fitting', specs: [['Use', 'Blue matching, polishing, deburring'], ['Team', 'Experienced tool-room hands'], ['Output', 'Smooth working assemblies']] },
     { name: 'Inspection and trials', specs: [['Use', 'Dimensional checks and fitment'], ['Tools', 'Gauges, height gauges, calipers'], ['Output', 'Release-ready components']] },
@@ -30,7 +26,7 @@ export default function Capabilities() {
             <div className="bracket-text">[ Infrastructure + Plant ]</div>
             <h2>A practical machine floor for precision pattern work.</h2>
           </div>
-          <p className="section-kicker">The reference profile talks about plant capability; here it becomes an interactive equipment dossier that keeps the website feeling sharp.</p>
+          <p className="section-kicker">Explore our machine floor capabilities — VMC machining and tool-room support, all under one roof.</p>
         </div>
 
         <div className="capabilities-tabs">

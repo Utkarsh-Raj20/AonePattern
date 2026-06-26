@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const heroImages = [
-  { src: '/hero/1.png', alt: 'Aone Pattern CNC Machine and tool design', focus: 'center 50%' },
+  { src: '/hero/1.png', alt: 'Aone Pattern VMC machine and tool design', focus: 'center 50%' },
   { src: '/hero/2.png', alt: 'Precision machining operations', focus: 'center 50%' },
   { src: '/hero/3.png', alt: 'High speed vertical machining center', focus: 'center 50%' },
   { src: '/hero/4.png', alt: 'Precision dies and mould products', focus: 'center 50%' },
   { src: '/hero/5.png', alt: 'Inspection and Quality Check', focus: 'center 50%' },
-  { src: '/hero/6.png', alt: 'Advanced CNC tooling setup', focus: 'center 50%' },
+  { src: '/hero/6.png', alt: 'Advanced VMC tooling setup', focus: 'center 50%' },
 ]
 
 const getWrappedIndex = (index) => (index + heroImages.length) % heroImages.length
@@ -45,7 +45,7 @@ export default function Hero() {
         <div className="hero-mark">A1</div>
         <div className="hero-note">
           Tools. Dies. Patterns.<br />
-          Built around CNC discipline.
+          Built around VMC discipline.
         </div>
       </div>
 
@@ -80,6 +80,8 @@ export default function Hero() {
                 <img
                   src={image.src}
                   alt={image.alt}
+                  loading={isMain ? 'eager' : 'lazy'}
+                  fetchPriority={isMain && active === 0 ? 'high' : 'auto'}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -123,11 +125,11 @@ export default function Hero() {
 
       <div className="hero-bottomline">
         <h1 className="huge-title">
-          <span>Aone Pattern</span>
-          <span>machines the mould behind the machine.</span>
+          <span style={{ color: 'var(--accent-red)' }}>Aone Pattern</span>
+          <span>Where every great casting begins.</span>
         </h1>
         <div className="hero-caption">
-          VMC and CNC manufacturing for tools, dies, casting patterns, core boxes, fixtures, and precision components.
+          VMC manufacturing for tools, dies, casting patterns, core boxes, fixtures, and precision components.
         </div>
       </div>
     </section>
