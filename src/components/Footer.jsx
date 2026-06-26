@@ -12,7 +12,7 @@ export default function Footer() {
               <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 8 }}>Registered Office / Works</div>
               <div style={{ fontSize: '1.1rem', lineHeight: '1.5' }}>
                 Plot No. 2682, St. No. 1,<br />
-                Near JBR Electronics, Baba Gajjajan Colony,<br />
+                Near JBR Electronics, Baba Gajja jain Colony,<br />
                 Old Moti Nagar, Ludhiana, Punjab, 141003
               </div>
             </div>

@@ -74,7 +74,7 @@ Note: Please reply with your drawing and 3D model files attached.
               <div className="contact-icon"><MapPin size={20} /></div>
               <div>
                 <h4>Location</h4>
-                <p>Plot No. 2682, St. No. 1,<br />Near JBR Electronics, Baba Gajjajan Colony,<br />Old Moti Nagar, Ludhiana, Punjab, 141003</p>
+                <p>Plot No. 2682, St. No. 1,<br />Near JBR Electronics, Baba Gajja jain Colony,<br />Old Moti Nagar, Ludhiana, Punjab, 141003</p>
               </div>
             </div>
             <div className="contact-item">
