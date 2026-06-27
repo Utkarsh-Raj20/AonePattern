@@ -21,9 +21,12 @@ export default function Hero() {
   ]
 
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReducedMotion) return undefined
+
     const timer = window.setInterval(() => {
       setActive((current) => getWrappedIndex(current + 1))
-    }, 2000)
+    }, 3000)
 
     return () => window.clearInterval(timer)
   }, [])
@@ -128,8 +131,11 @@ export default function Hero() {
           <span style={{ color: 'var(--accent-red)' }}>Aone Pattern</span>
           <span>Where every great casting begins.</span>
         </h1>
-        <div className="hero-caption">
-          VMC manufacturing for tools, dies, casting patterns, core boxes, fixtures, and precision components.
+        <div className="hero-caption-block">
+          <div className="hero-caption">
+            VMC manufacturing for tools, dies, casting patterns, core boxes, fixtures, and precision components.
+          </div>
+          <a className="hero-rfq-link" href="#contact">Request a quote</a>
         </div>
       </div>
     </section>

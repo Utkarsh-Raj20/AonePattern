@@ -62,7 +62,7 @@ Note: Please reply with your drawing and 3D model files attached.
       <div className="container">
         <div className="section-header-brutal">
           <div>
-            <div className="bracket-text">[ Get In Touch ]</div>
+            <div className="bracket-text">Get In Touch</div>
             <h2>Request a Quote.</h2>
           </div>
           <p className="section-kicker">Send us your drawings, 3D models, and specifications. We'll get back to you with a detailed estimate within 24 hours.</p>
@@ -74,14 +74,14 @@ Note: Please reply with your drawing and 3D model files attached.
               <div className="contact-icon"><MapPin size={20} /></div>
               <div>
                 <h4>Location</h4>
-                <p>Plot No. 2682, St. No. 1,<br />Near JBR Electronics, Baba Gajja jain Colony,<br />Old Moti Nagar, Ludhiana, Punjab, 141003</p>
+              <p>Plot No. 2682, St. No. 1,<br />Near JBR Electronics, Baba Gajja Jain Colony,<br />Old Moti Nagar, Ludhiana, Punjab, 141003</p>
               </div>
             </div>
             <div className="contact-item">
               <div className="contact-icon"><Mail size={20} /></div>
               <div>
                 <h4>Email</h4>
-                <p>aonepattern@rediffmail.com</p>
+              <p><a href="mailto:aonepattern@rediffmail.com">aonepattern@rediffmail.com</a></p>
               </div>
             </div>
             <div className="contact-item">

@@ -25,7 +25,7 @@ export default function Products() {
       <div className="container">
         <div className="section-header-brutal">
           <div>
-            <div className="bracket-text">[ Products & Dies ]</div>
+            <div className="bracket-text">Products & Dies</div>
             <h2>If you are looking for excellent patterns, tools and dies, our company is the best in terms of quality.</h2>
           </div>
           <p className="section-kicker">We manufacture and machine any pattern, tool, or die configuration strictly as per our customer requirements, backed by robust quality and on-time delivery.</p>

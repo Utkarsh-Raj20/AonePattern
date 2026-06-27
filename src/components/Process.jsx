@@ -15,7 +15,7 @@ export default function Process() {
       <div className="container">
         <div className="section-header-brutal">
           <div>
-            <div className="bracket-text">[ Manufacturing Workflow ]</div>
+            <div className="bracket-text">Manufacturing Workflow</div>
             <h2>From drawing to production-ready tooling.</h2>
           </div>
           <p className="section-kicker">Every project follows a disciplined six-stage workflow — from drawing study to final inspection and dispatch.</p>

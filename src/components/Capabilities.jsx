@@ -23,7 +23,7 @@ export default function Capabilities() {
       <div className="container">
         <div className="section-header-brutal">
           <div>
-            <div className="bracket-text">[ Infrastructure + Plant ]</div>
+            <div className="bracket-text">Infrastructure + Plant</div>
             <h2>A practical machine floor for precision pattern work.</h2>
           </div>
           <p className="section-kicker">Explore our machine floor capabilities — VMC machining and tool-room support, all under one roof.</p>

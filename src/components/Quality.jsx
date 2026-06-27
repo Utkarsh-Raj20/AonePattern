@@ -16,7 +16,7 @@ export default function Quality() {
       <div className="container">
         <div className="section-header-brutal">
           <div>
-            <div className="bracket-text">[ Service + Quality ]</div>
+            <div className="bracket-text">Service + Quality</div>
             <h2>Inspection built into the rhythm of the job.</h2>
           </div>
           <p className="section-kicker">Quality is not a separate step — it is built into every stage of the process, from material selection to final trial fitment.</p>

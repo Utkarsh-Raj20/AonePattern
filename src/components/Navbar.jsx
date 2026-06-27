@@ -6,7 +6,6 @@ const links = [
   { href: '#process', label: 'PROCESS' },
   { href: '#products', label: 'PRODUCTS' },
   { href: '#quality', label: 'QUALITY' },
-  { href: '#contact', label: 'CONTACT' },
 ]
 
 export default function Navbar() {
@@ -46,6 +45,7 @@ export default function Navbar() {
         {links.map((l) => (
           <li key={l.href}><a href={l.href}>{l.label}</a></li>
         ))}
+        <li><a className="nav-cta" href="#contact">REQUEST QUOTE</a></li>
       </ul>
 
       <button
@@ -88,6 +88,14 @@ export default function Navbar() {
                     <a href={l.href} onClick={handleLinkClick}>{l.label}</a>
                   </motion.li>
                 ))}
+                <motion.li
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 40 }}
+                  transition={{ delay: 0.08 + links.length * 0.04 }}
+                >
+                  <a href="#contact" onClick={handleLinkClick}>REQUEST QUOTE</a>
+                </motion.li>
               </ul>
             </motion.div>
           </>

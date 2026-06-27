@@ -107,6 +107,12 @@ button { font: inherit; }
 .nav-logo svg { width: 24px; height: 24px; }
 .nav-links { display: flex; gap: 40px; list-style: none; }
 .nav-links a { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.nav-cta {
+  color: var(--accent-red);
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 4px;
+}
+.navbar.navbar-solid .nav-cta { color: var(--accent-red); }
 
 .nav-hamburger {
   display: none;
@@ -235,6 +241,33 @@ button { font: inherit; }
 .hero-note, .hero-caption { font-family: var(--font-mono); font-size: 0.85rem; opacity: 0.8; }
 .hero-note { text-align: right; max-width: 220px; }
 .hero-caption { max-width: 300px; padding-bottom: 16px; }
+.hero-caption-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 340px;
+}
+.hero-caption-block .hero-caption {
+  max-width: none;
+  padding-bottom: 0;
+}
+.hero-rfq-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  background: var(--accent-red);
+  color: white;
+  padding: 0 22px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.hero-rfq-link:hover {
+  color: white;
+  background: var(--text-dark);
+}
 .hero-machine-strip { flex: 1; display: flex; align-items: center; justify-content: center; gap: 32px; position: relative; z-index: 2; min-height: 0; }
 .hero-machine {
   border: 1px solid var(--border-color);
@@ -303,6 +336,9 @@ button { font: inherit; }
   font-size: 0.9rem;
   pointer-events: none;
   z-index: 1;
+}
+.model-loading.visible {
+  display: flex;
 }
 .three-model-canvas[data-model-status="loading"] ~ .model-loading {
   display: flex;
@@ -457,6 +493,10 @@ button { font: inherit; }
   outline: none;
   transition: border-color var(--transition);
 }
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6f7378;
+}
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -556,7 +596,7 @@ button { font: inherit; }
   .section-header-brutal h2 { font-size: 2.5rem; }
   .content-panel { padding: 60px 40px; min-height: auto; }
   .hero-bottomline { flex-direction: column; align-items: flex-start; gap: 24px; }
-  .hero-caption { max-width: 520px; }
+  .hero-caption-block { max-width: 520px; }
   .hero-machine-strip { gap: 16px; }
   .machine-grid, .products-grid, .quality-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .industries-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -580,6 +620,8 @@ button { font: inherit; }
   .hero-section { padding: 96px 22px 28px; }
   .hero-topline { margin-bottom: 24px; }
   .hero-bottomline { margin-top: 24px; }
+  .hero-section .huge-title { font-size: 2.8rem; }
+  .hero-rfq-link { width: 100%; justify-content: center; }
   .hero-machine-strip { min-height: 0; }
   .hero-machine.side { display: none; }
   .hero-machine.main { width: 100%; height: min(34vh, 260px); }

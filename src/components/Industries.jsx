@@ -18,7 +18,7 @@ export default function Industries() {
       <div className="container">
         <div className="section-header-brutal">
           <div>
-            <div className="bracket-text">[ Preeminent Partners ]</div>
+            <div className="bracket-text">Preeminent Partners</div>
             <h2>Industries and Casting Houses We Supply.</h2>
           </div>
           <p className="section-kicker">We partner with leading manufacturing, casting, and automotive giants to supply high-fidelity precision patterns, tools, and die components.</p>
